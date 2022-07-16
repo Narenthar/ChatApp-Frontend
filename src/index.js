@@ -8,7 +8,7 @@ import {Provider} from 'react-redux';
 import {PersistGate} from 'redux-persist/integration/react';
 import persistStore from 'redux-persist/es/persistStore';
 import store from "./store";
-import { HashRouter } from 'react-router-dom'
+
 
 
 const persistedStore = persistStore(store);
@@ -18,9 +18,7 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistedStore}>
-        <HashRouter>
-        <App />
-        </HashRouter>
+      <App />
       </PersistGate>
     </Provider>
     
