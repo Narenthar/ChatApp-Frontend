@@ -108,7 +108,8 @@ export const Sidebar = () => {
           onClick={() => handlePrivateMemberMsg(member)}
           disabled={member._id === user._id}
         >
-          <Row className = "list-group">
+          <div className = "list-members">
+          <Row>
             <Col xs={2} className="member-status">
               <img src={member.picture} className="member-status-img" alt="" />
               {member.status === "online" ? (
@@ -125,6 +126,7 @@ export const Sidebar = () => {
               <span className="badge rounded-pill bg-primary">{user.newMessages[orderIds(member._ids,user._id)]} </span>
             </Col>
           </Row>
+          </div>
         </ListGroup.Item>
       ))}
     </>
