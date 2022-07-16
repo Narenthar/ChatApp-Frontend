@@ -107,6 +107,7 @@ export const Sidebar = () => {
           active={privateMemberMsg?._id === member?._id}
           onClick={() => handlePrivateMemberMsg(member)}
           disabled={member._id === user._id}
+          className = "list-group"
         >
           <Row>
             <Col xs={2} className="member-status">
