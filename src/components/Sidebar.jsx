@@ -43,7 +43,7 @@ export const Sidebar = () => {
     if (user) {
       setCurrentRoom("");
       getRooms();
-      socket.emit("join-room", "general");
+      socket.emit("join-room", "");
       socket.emit("new-user");
     }
   }, []);
