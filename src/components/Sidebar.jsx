@@ -107,9 +107,8 @@ export const Sidebar = () => {
           active={privateMemberMsg?._id === member?._id}
           onClick={() => handlePrivateMemberMsg(member)}
           disabled={member._id === user._id}
-          className = "list-group"
         >
-          <Row>
+          <Row className = "list-group">
             <Col xs={2} className="member-status">
               <img src={member.picture} className="member-status-img" alt="" />
               {member.status === "online" ? (
