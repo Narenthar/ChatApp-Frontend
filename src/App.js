@@ -30,12 +30,12 @@ const user = useSelector((state) => state.user)
         <Route path="/" element={<Home />}/>
         {!user &&(
           <>
-        <Route path="#/login" element={<Login />}/>
-        <Route path="#/signup" element={<Signup />}/>
+        <Route path="/login" element={<Login />}/>
+        <Route path="/signup" element={<Signup />}/>
         </>
         )
       }
-        <Route path="#/chat" element={<Chat />}/>
+        <Route path="/chat" element={<Chat />}/>
       </Routes>
       </BrowserRouter>
       </AppContext.Provider>
