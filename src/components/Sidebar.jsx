@@ -76,7 +76,7 @@ export const Sidebar = () => {
     return <div className="alert alert-danger">Please Login</div>;
   }
   return (
-    <>
+    <div className="sidebar">
       <h2>Available rooms</h2>
       <ListGroup>
         {rooms.map((room, idx) => (
@@ -129,6 +129,6 @@ export const Sidebar = () => {
           </div>
         </ListGroup.Item>
       ))}
-    </>
+    </div>
   );
 };
